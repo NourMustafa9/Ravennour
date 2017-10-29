@@ -15,6 +15,10 @@
 		84F2FB861FA663DC00242D5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F2FB841FA663DC00242D5D /* LaunchScreen.storyboard */; };
 		84F2FB911FA663DD00242D5D /* MVPTry1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FB901FA663DD00242D5D /* MVPTry1Tests.swift */; };
 		84F2FB9C1FA663DD00242D5D /* MVPTry1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FB9B1FA663DD00242D5D /* MVPTry1UITests.swift */; };
+		84F2FBAE1FA6656C00242D5D /* DogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FBAD1FA6656C00242D5D /* DogData.swift */; };
+		84F2FBB01FA665A600242D5D /* AddDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FBAF1FA665A600242D5D /* AddDogViewController.swift */; };
+		84F2FBB21FA665EE00242D5D /* MyyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FBB11FA665EE00242D5D /* MyyTableViewCell.swift */; };
+		84F2FBB51FA6663000242D5D /* PresenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FBB41FA6663000242D5D /* PresenterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		84F2FB971FA663DD00242D5D /* MVPTry1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPTry1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F2FB9B1FA663DD00242D5D /* MVPTry1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPTry1UITests.swift; sourceTree = "<group>"; };
 		84F2FB9D1FA663DD00242D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F2FBAD1FA6656C00242D5D /* DogData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogData.swift; sourceTree = "<group>"; };
+		84F2FBAF1FA665A600242D5D /* AddDogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddDogViewController.swift; path = Views/AddDogViewController.swift; sourceTree = "<group>"; };
+		84F2FBB11FA665EE00242D5D /* MyyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyyTableViewCell.swift; path = Views/MyyTableViewCell.swift; sourceTree = "<group>"; };
+		84F2FBB41FA6663000242D5D /* PresenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,10 @@
 		84F2FB771FA663DC00242D5D /* MVPTry1 */ = {
 			isa = PBXGroup;
 			children = (
+				84F2FBB31FA6660200242D5D /* Presenter */,
+				84F2FBAA1FA6642900242D5D /* Models */,
 				84F2FB781FA663DC00242D5D /* AppDelegate.swift */,
-				84F2FB7A1FA663DC00242D5D /* ViewController.swift */,
+				84F2FBA91FA663FA00242D5D /* Views */,
 				84F2FB7C1FA663DC00242D5D /* Main.storyboard */,
 				84F2FB821FA663DC00242D5D /* Assets.xcassets */,
 				84F2FB841FA663DC00242D5D /* LaunchScreen.storyboard */,
@@ -126,6 +136,32 @@
 				84F2FB9D1FA663DD00242D5D /* Info.plist */,
 			);
 			path = MVPTry1UITests;
+			sourceTree = "<group>";
+		};
+		84F2FBA91FA663FA00242D5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84F2FB7A1FA663DC00242D5D /* ViewController.swift */,
+				84F2FBAF1FA665A600242D5D /* AddDogViewController.swift */,
+				84F2FBB11FA665EE00242D5D /* MyyTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		84F2FBAA1FA6642900242D5D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84F2FBAD1FA6656C00242D5D /* DogData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84F2FBB31FA6660200242D5D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				84F2FBB41FA6663000242D5D /* PresenterViewController.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F2FBAE1FA6656C00242D5D /* DogData.swift in Sources */,
 				84F2FB811FA663DC00242D5D /* MVPTry1.xcdatamodeld in Sources */,
 				84F2FB7B1FA663DC00242D5D /* ViewController.swift in Sources */,
+				84F2FBB21FA665EE00242D5D /* MyyTableViewCell.swift in Sources */,
+				84F2FBB01FA665A600242D5D /* AddDogViewController.swift in Sources */,
 				84F2FB791FA663DC00242D5D /* AppDelegate.swift in Sources */,
+				84F2FBB51FA6663000242D5D /* PresenterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +551,7 @@
 				84F2FBA21FA663DD00242D5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84F2FBA31FA663DD00242D5D /* Build configuration list for PBXNativeTarget "MVPTry1Tests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +560,7 @@
 				84F2FBA51FA663DD00242D5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84F2FBA61FA663DD00242D5D /* Build configuration list for PBXNativeTarget "MVPTry1UITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +569,7 @@
 				84F2FBA81FA663DD00242D5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

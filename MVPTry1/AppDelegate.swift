@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 
+var dogsArray = [DogData]()
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
